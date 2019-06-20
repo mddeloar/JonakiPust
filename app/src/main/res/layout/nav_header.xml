@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="140dp"
+    android:background="@color/mint"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+    <Spinner
+        android:id="@+id/spinnerSetting"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:entries="@array/Setting"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        >
+
+    </Spinner>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ic_launcher_round"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Md. Deloar Hossain"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:paddingTop="8dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="deloar.pust@gmail.com"
+        android:textColor="@color/white"
+        />
+    </LinearLayout>
+
+</RelativeLayout>

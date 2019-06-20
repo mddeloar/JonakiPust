@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Sign Out"
+        android:id="@+id/SignOutMenuItemId"
+        />
+    <item
+        android:title="Sign In"
+        android:id="@+id/SignInMenuItemId"
+        />
+    <item
+        android:title="Sign Up"
+        android:id="@+id/SignUpMenuItemId"
+        />
+    <item
+        android:title="Sign Up"
+        android:id="@+id/CallMenuItemId"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_call_black_24dp"
+        />
+    <item
+        android:title="Sign Up"
+        android:id="@+id/MessageMenuItemId"
+        app:showAsAction="always"
+        android:icon="@drawable/ic_message_black_24dp"
+
+
+    />
+
+</menu>

@@ -1,0 +1,408 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.mddeloarhossain.jonakipust.BloodDonorProfileActivity">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="60dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <ImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="96dp"
+            android:layout_height="96dp"
+            android:src="@drawable/deloars"
+
+            android:layout_marginTop="20dp"
+            android:layout_gravity="center_horizontal"/>
+        <TextView
+            android:id="@+id/t1Id"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Md. Deloar Hossain"
+            android:textStyle="bold"
+            android:textSize="21sp"
+            android:layout_marginTop="20dp"/>
+
+    </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center">
+        <android.support.v7.widget.CardView
+            android:id="@+id/DonationDateId"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="3dp"
+            app:cardElevation="6dp"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Last donation Date: "/>
+                <TextView
+                    android:id="@+id/lastDonationDateTextId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not Set Yet"
+                    android:textStyle="bold"/>
+
+
+            </LinearLayout>
+
+
+
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1b1a1a"
+            android:layout_margin="15dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="4">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_question" />
+
+            <TextView
+                android:layout_weight="1.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Donation Status"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/DonationStatusTextViewId"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": Ready"
+                android:textStyle="bold"/>
+            <Switch
+                android:id="@+id/DonateSwitchId"
+                android:layout_weight="0.65"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="4">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_question" />
+
+            <TextView
+                android:layout_weight="1.85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Tution Status"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/TutionStatusTextViewId"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": Ready"
+                android:textStyle="bold"/>
+            <Switch
+                android:id="@+id/TutionSwitchId"
+                android:layout_weight="0.65"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+
+                />
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#1b1a1a"
+            android:layout_margin="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="4">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_email_black_24dp" />
+
+            <TextView
+                android:layout_weight=".85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+            <TextView
+                android:layout_weight="2.65"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": deloar.pust@gmail.com" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="4">
+
+
+
+
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_phone_android_black_24dp" />
+
+            <TextView
+                android:layout_weight=".85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Phone" />
+            <TextView
+                android:layout_weight="2.65"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": +01765436702" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="4">
+
+
+
+
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location1" />
+
+            <TextView
+                android:layout_weight=".85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="District" />
+            <TextView
+                android:layout_weight="2.65"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": Meherpur" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="4">
+
+
+
+
+            <ImageView
+                android:layout_weight="0.5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_location2" />
+
+            <TextView
+                android:layout_weight=".85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Area " />
+            <TextView
+                android:layout_weight="2.65"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": Bangla Clinic, Pabna Shadar" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:padding="5dp"
+            android:weightSum="4">
+
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:src="@drawable/ic_question" />
+
+            <TextView
+                android:layout_weight=".85"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Hospital " />
+            <TextView
+                android:layout_weight="2.65"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text=": Pabna Generel Hospital" />
+
+        </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            >
+
+            <LinearLayout
+                android:id="@+id/callButtonId"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circlebackgroundgreen"
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:clickable="true">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_call_black_24dp"/>
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:id="@+id/messageButtonId"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/circlebackground"
+                android:gravity="center"
+                android:layout_margin="10dp">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_message_black_24dp"/>
+
+
+            </LinearLayout>
+            <android.support.v7.widget.CardView
+                android:foreground="?android:attr/selectableItemBackground"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_margin="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="6dp"
+                >
+                <LinearLayout
+                    android:id="@+id/message1ButtonId"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/circlebackground"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="30dp"
+                        android:src="@drawable/ic_email_black_24dp" />
+
+
+                </LinearLayout>
+
+
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </LinearLayout>
+    </LinearLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+
+
+
+
+
+
+
+
+
+</ScrollView>

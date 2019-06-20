@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mddeloarhossain.jonakipust">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".HomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".DatePickerActivity" />
+        <activity android:name=".GridLayoutActivity" />
+        <activity android:name=".Grid1Activity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BloodMainActivity" />
+        <activity android:name=".BloodDonorsActivity" />
+        <activity android:name=".BloodDonors1Activity" />
+        <activity android:name=".FactsActivity" />
+        <activity android:name=".AmbulanceActivity" />
+        <activity android:name=".BloodDonorProfileActivity" />
+        <activity android:name=".Home1Activity" />
+        <activity android:name=".RegistrationActivity" />
+        <activity android:name=".AmbulanceAddActivity" />
+        <activity android:name=".BloodPostActivity" />
+        <activity android:name=".LogInActivity" />
+        <activity android:name=".TutionPostActivity" />
+        <activity android:name=".BloodPostShowActivity" />
+        <activity android:name=".BloodDonorProfile1Activity" />
+        <activity android:name=".ProfileActivity" />
+        <activity android:name=".FireServiceActivity" />
+        <activity android:name=".FloatingActionButtonActivity" />
+        <activity android:name=".NavigationDrawerActivity"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mddeloarhossain.jonakipust.FloatingActionButtonActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World"
+        android:layout_marginBottom="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"/>
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        app:fab_addButtonColorNormal="@color/green"
+        app:fab_addButtonColorPressed="@color/grassdark"
+        app:fab_addButtonPlusIconColor="@color/white"
+        app:fab_labelStyle="@style/custom_fab"
+        >
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fa0303"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_call_black_24dp"
+            app:fab_size="mini"
+            android:id="@+id/fab_action1"
+            app:fab_title="Fab Action 1"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="#fa0303"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_message_black_24dp"
+            app:fab_size="mini"
+            android:id="@+id/fab_action2"
+            app:fab_title="Hi ! This is Md. Deloar Hossain"/>
+
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_email_black_24dp"
+            app:fab_size="mini"
+            android:id="@+id/fab_action3"
+            app:fab_title="My Mother: Mst. Mazeda Khatun"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_facebook1"
+            app:fab_size="mini"
+            android:id="@+id/fab_action4"
+            app:fab_title="My Father: Md. Dulal Hossain"/>
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_colorNormal="@color/white"
+            app:fab_colorPressed="@color/pinkrose"
+            app:fab_icon="@drawable/ic_add_pink"
+            app:fab_size="mini"
+            android:id="@+id/fab_action5"
+            app:fab_title="Fab Action 5"/>
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+
+</RelativeLayout>
